@@ -1,0 +1,94 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container-card{
+    position: relative;
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    background-color: pink;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.image-zoom{
+    width: 100%;
+    height: 100%;
+    background-image: url('../public/media/bryan.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+}
+
+.bloc-focus-top, .bloc-focus-bottom{
+    width: 300px;
+    height: 300px;
+    position:  absolute;
+    z-index: -1;
+}
+
+.bloc-focus-top {
+    background: #536976;
+    top: 0;
+    left: 0;
+}
+.bloc-focus-bottom{
+    bottom: 0;
+    right: 0;
+    background: #292E49;
+}
+
+.bloc-content-show{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(135deg, rgba(107, 107, 107,0.06) 0%, rgba(107, 107, 107,0.06) 50%,rgba(202, 202, 202,0.06) 50%, rgba(202, 202, 202,0.06) 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20)); background-size: 30px 30px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    color: #f1f1f1;
+    padding: 15px;
+    /* transform: translateY(200px); */
+}
+.bloc-content-show h2 {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat, sans-serif;
+}
+.bloc-content-show h2 img {
+    width: 30px;
+}
+.bloc-content-show hr {
+    width: 100px;
+    height: 1px;
+    border-radius: 5px;
+    margin: 7px 0 20px;
+    background: #f1f1f1;
+    border: none;
+}
+.bloc-content-show p {
+    font-family: Roboto, sans-serif;
+    margin: 5px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.bloc-content-show p span{
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
