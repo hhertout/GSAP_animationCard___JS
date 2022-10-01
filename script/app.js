@@ -11,8 +11,7 @@ const separation = document.querySelector('.bloc-content-show hr');
 const TLanim = gsap.timeline({paused: true});
 
 TLanim
-.fromTo(imageZoom, 
-    {scale: 1}, 
+.to(imageZoom,  
     {scale: 2, 
         y: -50, 
         x:200, 

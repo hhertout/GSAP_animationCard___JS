@@ -23,7 +23,7 @@ body{
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .image-zoom{
@@ -40,6 +40,7 @@ body{
     height: 300px;
     position:  absolute;
     z-index: -1;
+    border-radius: 10px;
 }
 
 .bloc-focus-top {
